@@ -87,6 +87,128 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* ===================== MOBILE STYLES ===================== */
+
+/* ------------------ BASE HEADER, FOOTER STYLES ------------------ */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* ------------------ BASE SECTION, CONTAINER STYLES ------------------*/
+.section {
+  max-width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1200px;
+  padding: 0;
+}
+
+/* ------------------ HEADER ------------------*/
+header {
+
+}
+
+header figure {
+
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+/* ------------------ FOOTER ------------------*/
+footer {
+
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer h2 #contact {
+
+}
+
+footer .contact-text {
+  
+}
+
+footer .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+footer .send-button {
+
+}
+
+footer .copyright {
+
+}
+
+/* ------------------ MAIN SECTION ------------------*/
+main {
+
+}
+
+main .project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+main figure {
+
+}
+
+main .project-description {
+
+}
+
+main #pj-one {
+
+}
+
+main #pj-two {
+
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +302,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +315,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -260,4 +383,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
