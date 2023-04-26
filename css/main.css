@@ -90,23 +90,22 @@ textarea {
 
 /* ===================== MOBILE STYLES ===================== */
 
-/* ------------------ BASE HEADER, FOOTER STYLES ------------------ */
-header,
-footer {
-  padding-top: 15px;
+
+/* ------------------ BASE SECTION, CONTAINER STYLES ------------------*/
+body {
+  background-color: #f9f7f7;
 }
 
 .divider {
   height: 2px;
   width: 100%;
   background-color: #5d5d5d;
+  margin: 30px 0;
 }
 
-/* ------------------ BASE SECTION, CONTAINER STYLES ------------------*/
 .section {
   max-width: 100%;
   padding: 0;
-  margin: 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,11 +122,17 @@ footer {
 
 /* ------------------ HEADER ------------------*/
 header {
-  background-color: rgb(21, 62, 5);
+  padding-top: 15px;
+  background-color: rgba(21, 62, 5, 0.208);
+  max-width: 100%;
 }
 
 header img {
   max-width: 100px;
+}
+
+header .nav {
+  max-width: 100%;
 }
 
 header nav {
@@ -155,14 +160,15 @@ header nav ul li a {
 
 /* ------------------ FOOTER ------------------*/
 footer {
-  background-color: rgb(21, 62, 5);
 }
 
 footer h2 {
+  margin: 0;
   text-align: center;
 }
 
 footer p {
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -175,28 +181,38 @@ footer .contact-form {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 80%;
-  padding: 10px;
-  border: #0000006a solid 1px;
+  max-width: 450px;
+  padding: 20px 10px;
+  margin: 0 20px;
   background-color: #ffffff;
+  box-shadow: 1px 5px 20px rgba(192, 192, 192, 0.402);
 }
 
 footer .input {
-  padding: 10px o;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 footer .input input {
-  margin: 5px 50px;
+  margin:10px 0;
+  padding: 2px;
+  width: 80%;
 }
 
 footer .send-button {}
 
+footer img {
+  max-width: 40vw;
+  max-height: 25vw;
+  margin: 120px 0 30px 0;
+}
+
 footer .copyright p {
-  margin: 50px 0 10px 0;
+  margin-bottom:10px;
 }
 
 /* ------------------ MAIN SECTION ------------------*/
@@ -217,7 +233,9 @@ main img {
 
 main .project-description {}
 
-main #pj-one {}
+main #pj-one {
+  margin-bottom: 100px;
+}
 
 main #pj-two {}
 
@@ -310,9 +328,17 @@ main #pj-two {}
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* TABLET STYLES HERE */
 }
+
+
+@media only screen and (min-width: 1200px) {
+    /* DESKTOP STYLES HERE */
+
+}
+
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
