@@ -96,13 +96,6 @@ body {
   background-color: #f9f7f7;
 }
 
-.divider {
-  height: 2px;
-  width: 100%;
-  background-color: #5d5d5d;
-  margin: 30px 0;
-}
-
 .section {
   max-width: 100%;
   padding: 0;
@@ -159,8 +152,7 @@ header nav ul li a {
 }
 
 /* ------------------ FOOTER ------------------*/
-footer {
-}
+footer {}
 
 footer h2 {
   margin: 0;
@@ -198,7 +190,7 @@ footer .input {
 }
 
 footer .input input {
-  margin:10px 0;
+  margin: 10px 0;
   padding: 2px;
   width: 80%;
 }
@@ -212,7 +204,7 @@ footer img {
 }
 
 footer .copyright p {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 /* ------------------ MAIN SECTION ------------------*/
@@ -330,11 +322,21 @@ main #pj-two {}
 
 @media only screen and (min-width: 768px) {
   /* TABLET STYLES HERE */
+
+  main .container {
+    flex-flow: row wrap;
+
+  }
+
+  main .project {
+    width: 40%;
+    padding: 0;
+  }
+
 }
 
-
 @media only screen and (min-width: 1200px) {
-    /* DESKTOP STYLES HERE */
+  /* DESKTOP STYLES HERE */
 
 }
 
